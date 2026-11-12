@@ -3,6 +3,12 @@
 Одностраничный лендинг: возможности, скриншоты, описание, установка, FAQ.
 Языки — **русский** и **украинский** (переключатель в шапке, выбор сохраняется).
 
+## Ссылки
+
+- **Сайт:** https://semen4324.github.io/luna-launcher/
+- **Репозиторий:** https://github.com/semen4324/luna-launcher
+- **Установщик (Release):** https://github.com/semen4324/luna-launcher/releases/latest
+
 ## Файлы
 
 ```
@@ -20,39 +26,32 @@ website/
 
 Зависимостей нет — чистый HTML/CSS/JS, подходит для любого статического хостинга.
 
-## 1. Ссылка на скачивание (сделать обязательно)
+## 1. Ссылка на скачивание (уже настроено)
 
-Откройте `app.js`, самый верх:
+В `app.js`, самый верх:
 
 ```js
 const CONFIG = {
   version: "1.0.0",
   size: "111 MB",
-  downloadUrl: "https://github.com/YOUR-USERNAME/YOUR-REPO/releases/latest/download/LunaLauncher-Setup-1.0.0.exe",
-  repoUrl: "https://github.com/YOUR-USERNAME/YOUR-REPO"
+  downloadUrl: "https://github.com/semen4324/luna-launcher/releases/latest/download/LunaLauncher-Setup-1.0.0.exe",
+  repoUrl: "https://github.com/semen4324/luna-launcher"
 };
 ```
 
-Замените `YOUR-USERNAME` и `YOUR-REPO` на свои. Пока там заглушка, по нажатию
-кнопки «Скачать» показывается подсказка вместо перехода.
+Ссылка ведёт на свежий релиз — при выходе новой версии просто создайте
+Release с тем же именем файла, и кнопка подхватит его без правок в коде.
 
-### Как залить установщик на GitHub Releases
+### Как обновить установщик (следующая версия)
 
 ```bash
-# 1. завести репозиторий и склонировать его
-git init && git remote add origin https://github.com/USER/REPO.git
-
-# 2. закоммитить сайт
-git add website && git commit -m "landing"
-
-# 3. создать релиз и прикрепить установщик
-gh release create v1.0.0 \
-  "ModernLauncher/dist/LunaLauncher-Setup-1.0.0.exe" \
-  --title "Luna Launcher 1.0.0" --notes "Первый релиз"
+gh release create v1.1.0 "ModernLauncher/dist/LunaLauncher-Setup-1.1.0.exe" \
+  --repo semen4324/luna-launcher \
+  --title "Luna Launcher 1.1.0" --notes "..."
 ```
 
-Без `gh` — просто создайте Release в вебе и перетащите файл
-`ModernLauncher/dist/LunaLauncher-Setup-1.0.0.exe` (111 МБ) в поле «Attach assets».
+Либо в вебе: репозиторий → **Releases → Draft a new release** → перетащить
+`dist/LunaLauncher-Setup-x.y.z.exe` в поле «Attach assets».
 
 ## 2. Где опубликовать
 

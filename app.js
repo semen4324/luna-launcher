@@ -1,14 +1,11 @@
 /* ================= Luna Launcher — landing ================= */
 
-/* ---- Ссылки на скачивание (GitHub Releases) ----
-   Замени YOUR-USERNAME и YOUR-REPO на свои, когда заведёшь репозиторий.
-   Пример: https://github.com/luna-launcher/luna-launcher/releases/latest/download/LunaLauncher-Setup-1.0.0.exe
-*/
+/* ---- Ссылки на скачивание (GitHub Releases) ---- */
 const CONFIG = {
   version: "1.0.0",
   size: "111 MB",
-  downloadUrl: "https://github.com/YOUR-USERNAME/YOUR-REPO/releases/latest/download/LunaLauncher-Setup-1.0.0.exe",
-  repoUrl: "https://github.com/YOUR-USERNAME/YOUR-REPO"
+  downloadUrl: "https://github.com/semen4324/luna-launcher/releases/latest/download/LunaLauncher-Setup-1.0.0.exe",
+  repoUrl: "https://github.com/semen4324/luna-launcher"
 };
 
 const T = {
