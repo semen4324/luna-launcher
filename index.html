@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Luna Launcher — современный лаунчер для Minecraft</title>
+<meta name="description" content="Luna Launcher — бесплатный лаунчер для Minecraft на Windows: аккаунты Microsoft и офлайн, тысячи версий, Fabric/Quilt/Forge, моды Modrinth, 3D-скины и полная кастомизация дизайна.">
+<meta property="og:title" content="Luna Launcher — современный лаунчер для Minecraft">
+<meta property="og:description" content="Аккаунты, версии, моды, скины и полная кастомизация дизайна. Бесплатно для Windows.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/shot-main.png">
+<link rel="icon" href="assets/icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="hdr" id="hdr">
+  <div class="wrap hdr-in">
+    <a class="logo" href="#top">
+      <span class="logo-mark">◈</span>
+      <span class="logo-txt">Luna <b>Launcher</b></span>
+    </a>
+
+    <nav class="nav" id="nav">
+      <a href="#features" data-i18n="nav.features">Возможности</a>
+      <a href="#screens" data-i18n="nav.screens">Скриншоты</a>
+      <a href="#about" data-i18n="nav.about">О лаунчере</a>
+      <a href="#install" data-i18n="nav.install">Установка</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+
+    <div class="hdr-right">
+      <div class="lang" role="group" aria-label="Language">
+        <button type="button" class="lang-btn is-on" data-lang="ru">RU</button>
+        <button type="button" class="lang-btn" data-lang="ua">UA</button>
+      </div>
+      <a class="btn btn-primary btn-sm js-dl" href="#"><span data-i18n="btn.download">Скачать</span></a>
+      <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="top">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="wrap hero-in">
+    <div class="hero-txt">
+      <span class="pill" data-i18n="hero.pill">Бесплатный лаунчер для Windows</span>
+      <h1 data-i18n-html="hero.title">Современный лаунчер <em>Luna</em></h1>
+      <p class="lead" data-i18n="hero.lead">Аккаунты, тысячи версий, моды, скины и полная кастомизация дизайна — всё в одном приложении. Выбери версию и жми «Играть».</p>
+
+      <div class="hero-cta">
+        <a class="btn btn-primary btn-lg js-dl" href="#">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 12 5 5 5-5"/><path d="M5 21h14"/></svg>
+          <span data-i18n="btn.downloadWin">Скачать для Windows</span>
+        </a>
+        <a class="btn btn-ghost btn-lg" href="#features" data-i18n="btn.how">Как это работает</a>
+      </div>
+
+      <ul class="hero-meta">
+        <li><b>1.0.0</b> <span data-i18n="meta.version">версия</span></li>
+        <li><b>111 МБ</b> <span data-i18n="meta.size">установщик</span></li>
+        <li><b>Win 10/11</b> <span data-i18n="meta.os">x64</span></li>
+      </ul>
+    </div>
+
+    <div class="hero-shot">
+      <div class="shot-frame">
+        <div class="shot-bar"><i></i><i></i><i></i></div>
+        <img src="assets/shot-main.png" alt="Главный экран Luna Launcher" width="1362" height="861" loading="eager">
+      </div>
+      <div class="glow" aria-hidden="true"></div>
+    </div>
+  </div>
+
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-in">
+      <span>Microsoft вход</span><span>•</span><span>Оффлайн аккаунты</span><span>•</span><span>Fabric</span><span>•</span><span>Quilt</span><span>•</span><span>Forge</span><span>•</span><span>NeoForge</span><span>•</span><span>Modrinth</span><span>•</span><span>CurseForge</span><span>•</span><span>3D-скины</span><span>•</span><span>Темы дизайна</span><span>•</span>
+      <span>Microsoft вход</span><span>•</span><span>Оффлайн аккаунты</span><span>•</span><span>Fabric</span><span>•</span><span>Quilt</span><span>•</span><span>Forge</span><span>•</span><span>NeoForge</span><span>•</span><span>Modrinth</span><span>•</span><span>CurseForge</span><span>•</span><span>3D-скины</span><span>•</span><span>Темы дизайна</span><span>•</span>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FEATURES ================= -->
+<section class="sec" id="features">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker" data-i18n="feat.kicker">Возможности</span>
+      <h2 data-i18n="feat.title">Всё, что нужно для игры</h2>
+      <p data-i18n="feat.sub">Лаунчер делает самое скучное — скачивание версий, библиотек, модов и настройку Java.</p>
+    </div>
+
+    <div class="grid grid-4">
+      <article class="card">
+        <div class="card-ico">👤</div>
+        <h3 data-i18n="f1.t">Аккаунты</h3>
+        <p data-i18n="f1.d">Оффлайн-режим и настоящий вход через Microsoft (Xbox). Аккаунт сохраняется, переключается в один клик.</p>
+      </article>
+
+      <article class="card">
+        <div class="card-ico">🎮</div>
+        <h3 data-i18n="f2.t">Тысячи версий</h3>
+        <p data-i18n="f2.d">Все релизы Mojang, снапшоты, локальные профили и установка нужных библиотек автоматически.</p>
+      </article>
+
+      <article class="card">
+        <div class="card-ico">⚙️</div>
+        <h3 data-i18n="f3.t">Загрузчики</h3>
+        <p data-i18n="f3.d">Fabric, Quilt, Forge и NeoForge ставятся в один клик — вместе с API модов.</p>
+      </article>
+
+      <article class="card">
+        <div class="card-ico">🧩</div>
+        <h3 data-i18n="f4.t">Моды</h3>
+        <p data-i18n="f4.d">Поиск по базе Modrinth, установка нужной версии под твою сборку, апдейты и папка модов.</p>
+      </article>
+
+      <article class="card">
+        <div class="card-ico">🧥</div>
+        <h3 data-i18n="f5.t">Скины</h3>
+        <p data-i18n="f5.d">Тысячи популярных скинов, загрузка своих PNG 64×64 и живое 3D-превью прямо в лаунчере.</p>
+      </article>
+
+      <article class="card">
+        <div class="card-ico">🎨</div>
+        <h3 data-i18n="f6.t">Дизайн</h3>
+        <p data-i18n="f6.d">Темы с уникальными фонами, цвета, скругления, анимации, звук при наведении и панель слева/снизу/сверху/справа.</p>
+      </article>
+
+      <article class="card">
+        <div class="card-ico">🗂️</div>
+        <h3 data-i18n="f7.t">Ресурс-паки</h3>
+        <p data-i18n="f7.d">Установка паков и шейдеров в один клик, быстрый доступ к папке игры .minecraft.</p>
+      </article>
+
+      <article class="card">
+        <div class="card-ico">☕</div>
+        <h3 data-i18n="f8.t">Java и память</h3>
+        <p data-i18n="f8.d">Автопоиск Java, выбор объёма памяти, разрешение окна и режим полноэкранного режима.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SCREENSHOTS ================= -->
+<section class="sec sec-alt" id="screens">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker" data-i18n="scr.kicker">Скриншоты</span>
+      <h2 data-i18n="scr.title">Так выглядит Luna</h2>
+      <p data-i18n="scr.sub">Четыре экрана — от запуска игры до настроек оформления.</p>
+    </div>
+
+    <div class="tabs" id="tabs" role="tablist">
+      <button class="tab is-on" data-shot="main" role="tab" aria-selected="true" data-i18n="scr.t1">Главный экран</button>
+      <button class="tab" data-shot="skins" role="tab" aria-selected="false" data-i18n="scr.t2">Скины</button>
+      <button class="tab" data-shot="mods" role="tab" aria-selected="false" data-i18n="scr.t3">Моды</button>
+      <button class="tab" data-shot="settings" role="tab" aria-selected="false" data-i18n="scr.t4">Настройки</button>
+    </div>
+
+    <div class="viewer">
+      <div class="shot-frame big">
+        <div class="shot-bar"><i></i><i></i><i></i></div>
+        <img id="viewer-img" src="assets/shot-main.png" alt="Luna Launcher" width="1362" height="861" loading="lazy">
+      </div>
+      <p class="viewer-cap" id="viewer-cap" data-i18n="scr.t1">Главный экран</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section class="sec" id="about">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker" data-i18n="abt.kicker">Подробнее</span>
+      <h2 data-i18n="abt.title">О лаунчере</h2>
+      <p data-i18n="abt.sub">Что это, как работает и чем отличается от других лаунчеров.</p>
+    </div>
+
+    <div class="about">
+      <div class="about-col">
+        <h3 data-i18n="abt.h1">Реальный запуск игры</h3>
+        <p data-i18n="abt.p1">Luna Launcher — самостоятельное десктопное приложение для Windows. Он сам скачивает версии Minecraft у Mojang, собирает класс-путь, ставит нужные библиотеки и нативные файлы, а затем запускает саму игру. Никаких эмуляций и заглушек — игра стартует по-настоящему.</p>
+
+        <h3 data-i18n="abt.h2">Безопасный вход</h3>
+        <p data-i18n="abt.p2">Вход через Microsoft открывается на официальной странице Microsoft — пароль вводится там, а лаунчер получает только токен доступа. Для одиночной игры и локальных серверов достаточно оффлайн-аккаунта: придумайте ник и играйте.</p>
+
+        <h3 data-i18n="abt.h3">Ваши данные остаются у вас</h3>
+        <p data-i18n="abt.p3">Игра хранится в стандартной папке .minecraft, которую можно указать самому. Настройки лаунчера, аккаунты, скины и моды сохраняются локально на компьютере — облако не используется.</p>
+      </div>
+
+      <aside class="spec">
+        <h4 data-i18n="abt.specH">Технические детали</h4>
+        <ul>
+          <li><span data-i18n="abt.s1k">Платформа</span><b data-i18n="abt.s1v">Windows 10/11, x64</b></li>
+          <li><span data-i18n="abt.s2k">Технология</span><b data-i18n="abt.s2v">Electron + Node.js</b></li>
+          <li><span data-i18n="abt.s3k">Версии игры</span><b data-i18n="abt.s3v">Все релизы и снапшоты Mojang</b></li>
+          <li><span data-i18n="abt.s4k">Загрузчики</span><b data-i18n="abt.s4v">Fabric · Quilt · Forge · NeoForge</b></li>
+          <li><span data-i18n="abt.s5k">Источники модов</span><b data-i18n="abt.s5v">Modrinth · CurseForge</b></li>
+          <li><span data-i18n="abt.s6k">Скины</span><b data-i18n="abt.s6v">3D-превью, PNG 64×64</b></li>
+          <li><span data-i18n="abt.s7k">Цена</span><b data-i18n="abt.s7v">Бесплатно</b></li>
+          <li><span data-i18n="abt.s8k">Размер</span><b>111 МБ</b></li>
+        </ul>
+        <div class="spec-note" data-i18n="abt.note">Проект не связан с Mojang Studios и Microsoft.</div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ================= INSTALL ================= -->
+<section class="sec sec-alt" id="install">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker" data-i18n="ins.kicker">Установка</span>
+      <h2 data-i18n="ins.title">Как запустить за 3 шага</h2>
+      <p data-i18n="ins.sub">Установщик ставит лаунчер без прав администратора.</p>
+    </div>
+
+    <ol class="steps">
+      <li class="step">
+        <span class="step-n">1</span>
+        <h3 data-i18n="ins.s1t">Скачайте установщик</h3>
+        <p data-i18n="ins.s1d">Нажмите кнопку «Скачать для Windows» — файл LunaLauncher-Setup-1.0.0.exe размером 111 МБ.</p>
+      </li>
+      <li class="step">
+        <span class="step-n">2</span>
+        <h3 data-i18n="ins.s2t">Запустите и установите</h3>
+        <p data-i18n="ins.s2d">Откройте файл, выберите папку и нажмите «Установить». Ярлык появится на рабочем столе и в меню «Пуск».</p>
+      </li>
+      <li class="step">
+        <span class="step-n">3</span>
+        <h3 data-i18n="ins.s3t">Добавьте аккаунт и играйте</h3>
+        <p data-i18n="ins.s3d">Оффлайн или через Microsoft, выберите версию и нажмите «Играть». Java лаунчер найдёт сам.</p>
+      </li>
+    </ol>
+
+    <div class="reqs">
+      <div class="req">
+        <h4 data-i18n="req.title">Системные требования</h4>
+        <ul>
+          <li data-i18n="req.1">Windows 10 или 11 (64-бит)</li>
+          <li data-i18n="req.2">2 ГБ ОЗУ для лаунчера, 4+ ГБ для игры</li>
+          <li data-i18n="req.3">От 1 ГБ свободного места на диске</li>
+          <li data-i18n="req.4">Интернет для загрузки версий и модов</li>
+        </ul>
+      </div>
+      <div class="req">
+        <h4 data-i18n="req2.title">Чего не нужно</h4>
+        <ul>
+          <li data-i18n="req2.1">Прав администратора</li>
+          <li data-i18n="req2.2">Устанавливать Java заранее</li>
+          <li data-i18n="req2.3">Регистрироваться на сторонних сайтах</li>
+          <li data-i18n="req2.4">Платить — лаунчер полностью бесплатный</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section class="sec" id="faq">
+  <div class="wrap wrap-narrow">
+    <div class="sec-head">
+      <span class="kicker">FAQ</span>
+      <h2 data-i18n="faq.title">Частые вопросы</h2>
+    </div>
+
+    <details class="faq-i" open>
+      <summary data-i18n="faq.q1">Лаунчер бесплатный?</summary>
+      <p data-i18n="faq.a1">Да, полностью. Нет рекламы, нет платных функций и нет скрытых платежей.</p>
+    </details>
+
+    <details class="faq-i">
+      <summary data-i18n="faq.q2">Нужен ли аккаунт Microsoft?</summary>
+      <p data-i18n="faq.a2">Нет. Для одиночной игры достаточно офлайн-аккаунта — просто придумайте ник. Для официальных многопользовательских серверов понадобится настоящий аккаунт Microsoft с Minecraft.</p>
+    </details>
+
+    <details class="faq-i">
+      <summary data-i18n="faq.q3">Безопасен ли вход через Microsoft?</summary>
+      <p data-i18n="faq.a3">Да. Авторизация открывается на официальной странице Microsoft — лаунчер не видит и не хранит ваш пароль, он получает только временный токен.</p>
+    </details>
+
+    <details class="faq-i">
+      <summary data-i18n="faq.q4">Где хранятся игра и настройки?</summary>
+      <p data-i18n="faq.a4">Игра — в папке .minecraft (можно выбрать свою в настройках). Настройки, аккаунты и моды лаунчера — локально в папке данных приложения.</p>
+    </details>
+
+    <details class="faq-i">
+      <summary data-i18n="faq.q5">Будут ли работать мои старые моды и скины?</summary>
+      <p data-i18n="faq.a5">Да, если вы укажете существующую папку .minecraft — лаунчер подхватит установленные версии, моды, ресурс-паки и скины.</p>
+    </details>
+
+    <details class="faq-i">
+      <summary data-i18n="faq.q6">Можно ли изменить оформление?</summary>
+      <p data-i18n="faq.a6">Да: темы с уникальными фонами, акцентный цвет, затемнение, скругление, анимации, звук при наведении, положение панели меню и многое другое — в настройках дизайна.</p>
+    </details>
+  </div>
+</section>
+
+<!-- ================= CTA ================= -->
+<section class="cta">
+  <div class="wrap cta-in">
+    <div>
+      <h2 data-i18n="cta.title">Готовы начать?</h2>
+      <p data-i18n="cta.sub">Скачайте Luna Launcher и запустите Minecraft за пару минут.</p>
+    </div>
+    <a class="btn btn-primary btn-lg js-dl" href="#">
+      <span data-i18n="btn.downloadWin">Скачать для Windows</span>
+    </a>
+  </div>
+</section>
+
+</main>
+
+<footer class="ftr">
+  <div class="wrap ftr-in">
+    <div class="ftr-brand">
+      <a class="logo" href="#top"><span class="logo-mark">◈</span><span class="logo-txt">Luna <b>Launcher</b></span></a>
+      <p data-i18n="ftr.about">Бесплатный лаунчер для Minecraft с аккаунтами, модами, скинами и настройкой дизайна.</p>
+    </div>
+    <div class="ftr-col">
+      <h5 data-i18n="ftr.c1">Разделы</h5>
+      <a href="#features" data-i18n="nav.features">Возможности</a>
+      <a href="#screens" data-i18n="nav.screens">Скриншоты</a>
+      <a href="#about" data-i18n="nav.about">О лаунчере</a>
+      <a href="#install" data-i18n="nav.install">Установка</a>
+    </div>
+    <div class="ftr-col">
+      <h5 data-i18n="ftr.c2">Скачать</h5>
+      <a href="#" class="js-dl" data-i18n="ftr.dl">Windows (x64), 111 МБ</a>
+      <a href="#" id="repo-link" data-i18n="ftr.repo">Исходный код</a>
+    </div>
+  </div>
+  <div class="wrap ftr-bot">
+    <span data-i18n="ftr.copy">© 2026 Luna Launcher</span>
+    <span data-i18n="ftr.legal">Minecraft — товарный знак Mojang AB. Проект не связан с Mojang и Microsoft.</span>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
